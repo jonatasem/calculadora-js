@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <main class="calculator">
+        <section aria-labelledby="calculator-title">
+
+            <h1 id="calculator-title" class="visually-hidden">Calculadora</h1>
+            <div class="result" id="result" role="textbox" aria-readonly="true">0</div>
+
+            <div class="buttons" role="group" aria-label="Botões da calculadora">
+
+                <button class="btn gray" id="clear" aria-label="Limpar">C</button>
+                <button class="btn gray" id="toggle-sign" aria-label="Alterar sinal">±</button>
+                <button class="btn gray" id="percentage" aria-label="Porcentagem">%</button>
+                <button class="btn orange" id="divide" aria-label="Dividir">÷</button>
+
+                <button class="btn light-gray" aria-label="Número 7">7</button>
+                <button class="btn light-gray" aria-label="Número 8">8</button>
+                <button class="btn light-gray" aria-label="Número 9">9</button>
+                <button class="btn orange" id="multiply" aria-label="Multiplicar">×</button>
+
+                <button class="btn light-gray" aria-label="Número 4">4</button>
+                <button class="btn light-gray" aria-label="Número 5">5</button>
+                <button class="btn light-gray" aria-label="Número 6">6</button>
+                <button class="btn orange" id="subtract" aria-label="Subtrair">-</button>
+
+                <button class="btn light-gray" aria-label="Número 1">1</button>
+                <button class="btn light-gray" aria-label="Número 2">2</button>
+                <button class="btn light-gray" aria-label="Número 3">3</button>
+                <button class="btn orange" id="add" aria-label="Adicionar">+</button>
+
+                <button class="btn light-gray button-zero" aria-label="Número 0">0</button>
+                <button class="btn light-gray" aria-label="Ponto decimal">.</button>
+                <button class="btn orange" id="equals" aria-label="Igual">=</button>
+                
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

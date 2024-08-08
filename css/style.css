@@ -1,0 +1,86 @@
+/* Estilo básico para o corpo da página */
+body {
+  display: flex; /* Usa flexbox para centralizar a calculadora */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  height: 100vh; /* Define altura para ocupar toda a tela */
+  margin: 0; /* Remove margens padrão do browser */
+  font-family: Arial, sans-serif; /* Define a fonte padrão */
+  background-color: #bebaba; /* Cor de fundo da página */
+}
+
+/* Estilo da calculadora */
+.calculator {
+  background-color: #fff; /* Cor de fundo branca */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidade */
+  padding: 20px; /* Espaçamento interno */
+  width: 300px; /* Largura fixa da calculadora */
+}
+
+/* Estilo da área de resultado */
+.result {
+  background-color: #e9e9e9; /* Cor de fundo do resultado */
+  border-radius: 5px; /* Bordas arredondadas */
+  font-size: 2em; /* Tamanho da fonte maior */
+  height: 50px; /* Altura fixa */
+  display: flex; /* Usa flexbox para alinhar o texto */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: flex-end; /* Alinha o texto à direita */
+  padding: 0 10px; /* Espaçamento interno */
+  margin-bottom: 20px; /* Espaçamento inferior */
+  border: 1px solid #ccc; /* Borda cinza clara */
+}
+
+/* Estilo do contêiner de botões */
+.buttons {
+  display: grid; /* Usa grid para layout dos botões */
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas de largura igual */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+/* Estilo dos botões */
+.btn {
+  padding: 20px; /* Espaçamento interno dos botões */
+  font-size: 1.5em; /* Tamanho da fonte dos botões */
+  border: none; /* Remove bordas padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  transition: background-color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+/* Estilos para os botões com diferentes cores */
+.gray {
+  background-color: #d9d9d9; /* Cor de fundo cinza */
+}
+
+.light-gray {
+  background-color: #f2f2f2; /* Cor de fundo cinza claro */
+}
+
+.orange {
+  background-color: #ff8c00; /* Cor de fundo laranja */
+  color: #fff; /* Cor da fonte branca */
+}
+
+/* Estilo para o botão zero que ocupa duas colunas */
+.button-zero {
+  grid-column: span 2; /* Faz o botão ocupar duas colunas */
+}
+
+/* Efeito de hover para os botões */
+.btn:hover {
+  opacity: 0.9; /* Diminui a opacidade ao passar o mouse */
+}
+
+/* Classe para ocultar elementos visualmente, mas acessíveis para leitores de tela */
+.visually-hidden {
+  position: absolute; /* Remove do fluxo normal da página */
+  width: 1px; /* Tamanho mínimo */
+  height: 1px; /* Tamanho mínimo */
+  margin: -1px; /* Margem negativa para ocultar */
+  padding: 0; /* Remove padding */
+  overflow: hidden; /* Oculta overflow */
+  clip: rect(0, 0, 0, 0); /* Oculta o elemento */
+  border: 0; /* Remove bordas */
+}
